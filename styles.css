@@ -969,7 +969,7 @@ section {
 }
 
 .footer-tagline {
-  color: var(--text-muted);
+  color: var(--text-secondary);
   font-size: 0.95rem;
 }
 
@@ -1005,7 +1005,7 @@ section {
 }
 
 .footer-bottom p {
-  color: var(--text-muted);
+  color: var(--text-secondary);
   font-size: 0.9rem;
   margin: 0;
 }
