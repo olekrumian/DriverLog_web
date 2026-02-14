@@ -3,10 +3,636 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Driver Log Tracker</title>
+    <meta
+      name="description"
+      content="Driver Log Tracker - Your smart assistant for complying with Regulation 561. Control driving time, breaks, and rest in real-time."
+    />
+    <title>Driver Log Tracker - Smart Driving Time Compliance Tool</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Driver Log Tracker</h1>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <img
+              src="./images/web-app-manifest-192x192.png"
+              alt="Driver Log Tracker Logo"
+              width="40"
+              height="40"
+            />
+            <span>Driver Log Tracker</span>
+          </div>
+          <a
+            href="https://dltracker.netlify.app/"
+            class="btn-secondary"
+            target="_blank"
+            >Launch App</a
+          >
+        </nav>
+
+        <div class="hero-main">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Driver Log Tracker — Your Smart Assistant for
+              <span class="highlight">Regulation 561</span> Compliance
+            </h1>
+            <p class="hero-subtitle">
+              Forget manual calculations. Monitor driving time, breaks, and rest
+              in real-time directly in your browser.
+            </p>
+            <div class="hero-cta">
+              <a
+                href="https://dltracker.netlify.app/"
+                class="btn-primary"
+                target="_blank"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 2C14.4183 2 18 5.58172 18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M10 6V10L13 13"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                Start Calculating
+              </a>
+              <a href="#how-it-works" class="btn-secondary">Learn More</a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <div class="phone-mockup">
+              <img
+                src="images/app-screenshot-1.jpg"
+                alt="Driver Log Tracker mobile interface showing shift details"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-wave">
+        <svg
+          viewBox="0 0 1440 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z"
+            fill="var(--bg-secondary)"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <!-- Problem & Solution Section -->
+    <section class="problem-solution">
+      <div class="container">
+        <div class="section-content">
+          <div class="problem-box">
+            <div class="icon-box danger">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32 8L8 56H56L32 8Z"
+                  stroke="var(--danger-color)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="var(--danger-color)"
+                  fill-opacity="0.2"
+                />
+                <path
+                  d="M32 24V36"
+                  stroke="var(--danger-color)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <circle cx="32" cy="44" r="2" fill="var(--danger-color)" />
+              </svg>
+            </div>
+            <h3>The Problem</h3>
+            <p>
+              Tachograph mistakes cost dearly. EU fines for violations of
+              driving time regulations can reach thousands of euros.
+            </p>
+          </div>
+
+          <div class="arrow-connector">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path
+                d="M12 24H36M36 24L28 16M36 24L28 32"
+                stroke="var(--primary-color)"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <div class="solution-box">
+            <div class="icon-box success">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="32"
+                  cy="32"
+                  r="24"
+                  stroke="var(--success-color)"
+                  stroke-width="3"
+                  fill="var(--success-color)"
+                  fill-opacity="0.2"
+                />
+                <path
+                  d="M20 32L28 40L44 24"
+                  stroke="var(--success-color)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>The Solution</h3>
+            <p>
+              Driver Log Tracker is designed so you know exactly when to stop
+              and never violate the law.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Key Features</h2>
+          <p>Everything you need to stay compliant and drive with confidence</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect
+                  x="8"
+                  y="12"
+                  width="32"
+                  height="28"
+                  rx="2"
+                  stroke="var(--primary-color)"
+                  stroke-width="2"
+                />
+                <path
+                  d="M16 8V16M32 8V16M8 24H40"
+                  stroke="var(--primary-color)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="18" cy="30" r="1.5" fill="var(--primary-color)" />
+                <circle cx="24" cy="30" r="1.5" fill="var(--primary-color)" />
+                <circle cx="30" cy="30" r="1.5" fill="var(--primary-color)" />
+              </svg>
+            </div>
+            <h3>Regulation 561 Compliant</h3>
+            <p>
+              Algorithms that account for the latest "Mobility Package" updates,
+              ensuring full EU compliance.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <rect
+                  x="12"
+                  y="8"
+                  width="24"
+                  height="32"
+                  rx="2"
+                  stroke="var(--primary-color)"
+                  stroke-width="2"
+                />
+                <path
+                  d="M16 16H32M16 24H32M16 32H24"
+                  stroke="var(--primary-color)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Simple Interface</h3>
+            <p>
+              Minimum clicks — maximum information. Optimized for mobile
+              devices, perfect for the cabin.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="16"
+                  stroke="var(--primary-color)"
+                  stroke-width="2"
+                />
+                <path
+                  d="M24 24L18 14M24 24L34 20M24 24L30 34"
+                  stroke="var(--primary-color)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Multilingual Support</h3>
+            <p>
+              Supports local formats including Dutch (Jan, Feb, Ma, Di...) for
+              seamless international use.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M12 24L8 28L12 32M36 24L40 28L36 32M28 12L20 36"
+                  stroke="var(--primary-color)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Always Accessible</h3>
+            <p>
+              Web-based application works fast and is always available via link
+              — no app store required.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <h2>How It Works</h2>
+          <p>Three simple steps to stay compliant</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Enter Your Data</h3>
+              <p>
+                Input your shift start time or latest tachograph records. Quick
+                and easy data entry designed for drivers.
+              </p>
+              <div class="step-image">
+                <img
+                  src="images/app-screenshot-2.jpg"
+                  alt="Data entry screen"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Get Instant Calculations</h3>
+              <p>
+                The system instantly shows remaining time until your next break.
+                Real-time tracking keeps you informed.
+              </p>
+              <div class="step-image">
+                <img
+                  src="images/app-screenshot-3.jpg"
+                  alt="Calculation results screen"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Plan Your Route</h3>
+              <p>
+                Know in advance where and when you'll need a 45-minute break or
+                daily rest. Drive confidently.
+              </p>
+              <div class="step-image">
+                <img
+                  src="images/app-screenshot-4.jpg"
+                  alt="Statistics and planning screen"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Advantages Section -->
+    <section class="advantages">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Driver Log Tracker?</h2>
+          <p>Technical excellence for professional drivers</p>
+        </div>
+
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M35 6L16 34H28L25 58L44 30H32L35 6Z"
+                  stroke="var(--primary-color)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="var(--primary-color)"
+                  fill-opacity="0.2"
+                />
+              </svg>
+            </div>
+            <h3>Lightning Fast</h3>
+            <p>
+              Hosted on Netlify, the app loads instantly. No waiting, no delays
+              — just instant access when you need it.
+            </p>
+          </div>
+
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="18"
+                  y="28"
+                  width="28"
+                  height="24"
+                  rx="2"
+                  stroke="var(--primary-color)"
+                  stroke-width="3"
+                />
+                <path
+                  d="M23 28V20C23 15.0294 27.0294 11 32 11C36.9706 11 41 15.0294 41 20V28"
+                  stroke="var(--primary-color)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <circle cx="32" cy="40" r="3" fill="var(--primary-color)" />
+                <path
+                  d="M32 43V46"
+                  stroke="var(--primary-color)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Secure & Private</h3>
+            <p>
+              Your trip data stays on your device. No cloud storage, no data
+              sharing — complete privacy guaranteed.
+            </p>
+          </div>
+
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="20"
+                  y="8"
+                  width="20"
+                  height="32"
+                  rx="2"
+                  stroke="var(--primary-color)"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M28 36H32"
+                  stroke="var(--primary-color)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <rect
+                  x="8"
+                  y="28"
+                  width="32"
+                  height="20"
+                  rx="2"
+                  stroke="var(--primary-color)"
+                  stroke-width="2.5"
+                />
+                <circle cx="24" cy="38" r="1.5" fill="var(--primary-color)" />
+                <rect
+                  x="44"
+                  y="20"
+                  width="12"
+                  height="20"
+                  rx="1.5"
+                  stroke="var(--primary-color)"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+            <h3>Universal Access</h3>
+            <p>
+              Works on any smartphone, tablet, or laptop. One link, any device —
+              it's that simple.
+            </p>
+          </div>
+
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <svg
+                width="64"
+                height="64"
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M34 12C34 25.2548 23.2548 36 10 36C14.0583 45.4622 23.375 52 34 52C47.2548 52 58 41.2548 58 28C58 17.375 51.4622 8.05832 42 4C42 4 34 4 34 12Z"
+                  stroke="var(--primary-color)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="var(--primary-color)"
+                  fill-opacity="0.2"
+                />
+              </svg>
+            </div>
+            <h3>Dark Mode</h3>
+            <p>
+              Eye-friendly dark theme perfect for night shifts. Reduce eye
+              strain during long drives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase">
+      <div class="container">
+        <div class="section-header">
+          <h2>Designed for Professional Drivers</h2>
+        </div>
+
+        <div class="showcase-grid">
+          <div class="showcase-item">
+            <img
+              src="images/app-screenshot-5.jpg"
+              alt="Main screen with timer"
+            />
+            <p>Timer and rest tracking</p>
+          </div>
+          <div class="showcase-item">
+            <img src="images/app-screenshot-1.jpg" alt="Shift details" />
+            <p>Detailed shift events</p>
+          </div>
+          <div class="showcase-item">
+            <img src="images/app-screenshot-4.jpg" alt="Statistics" />
+            <p>Comprehensive statistics</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Drive Smarter?</h2>
+          <p>
+            Join professional drivers who trust Driver Log Tracker for
+            compliance
+          </p>
+          <a
+            href="https://dltracker.netlify.app/"
+            class="btn-primary large"
+            target="_blank"
+          >
+            Try Driver Log Tracker Now
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path
+                d="M7 3L14 10L7 17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="./images/web-app-manifest-192x192.png"
+                alt="Driver Log Tracker Logo"
+                width="40"
+                height="40"
+              />
+              <span>Driver Log Tracker</span>
+            </div>
+            <p class="footer-tagline">Developed for drivers by driver</p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li>
+                <a href="https://dltracker.netlify.app/" target="_blank"
+                  >Launch App</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a href="mailto:olekrumian@gmail.com">olekrumian@gmail.com</a>
+              </li>
+              <li>
+                <a href="https://dltracker.netlify.app/" target="_blank"
+                  >dltracker.netlify.app</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Driver Log Tracker. Built with care for professional
+            drivers.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
