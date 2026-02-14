@@ -224,7 +224,7 @@ const translations = {
     'cta.button': 'Спробувати Driver Log Tracker зараз',
 
     // Footer
-    'footer.tagline': 'Розроблено для водіїв водієм',
+    'footer.tagline': 'Розроблено водієм для водіїв',
     'footer.product.heading': 'Продукт',
     'footer.product.howItWorks': 'Як це працює',
     'footer.product.launchApp': 'Запустити додаток',
