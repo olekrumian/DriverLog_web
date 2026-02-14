@@ -1167,8 +1167,7 @@ section {
   }
 
   .lang-dropdown-menu {
-    right: 0;
-    left: auto;
+    left: 0;
     min-width: 160px;
     max-height: min(300px, calc(100vh - 100px));
   }
