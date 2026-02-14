@@ -106,7 +106,7 @@ const translations = {
     'cta.button': 'Try Driver Log Tracker Now',
 
     // Footer
-    'footer.tagline': 'Developed for drivers by professionals',
+    'footer.tagline': 'Developed for drivers by driver',
     'footer.product.heading': 'Product',
     'footer.product.howItWorks': 'How It Works',
     'footer.product.launchApp': 'Launch App',
@@ -224,7 +224,7 @@ const translations = {
     'cta.button': 'Спробувати Driver Log Tracker зараз',
 
     // Footer
-    'footer.tagline': 'Розроблено для водіїв професіоналами',
+    'footer.tagline': 'Розроблено для водіїв водієм',
     'footer.product.heading': 'Продукт',
     'footer.product.howItWorks': 'Як це працює',
     'footer.product.launchApp': 'Запустити додаток',
@@ -343,7 +343,7 @@ const translations = {
     'cta.button': 'Wypróbuj Driver Log Tracker teraz',
 
     // Footer
-    'footer.tagline': 'Stworzony dla kierowców przez profesjonalistów',
+    'footer.tagline': 'Stworzony dla kierowców przez kierowcę',
     'footer.product.heading': 'Produkt',
     'footer.product.howItWorks': 'Jak to działa',
     'footer.product.launchApp': 'Uruchom aplikację',
@@ -461,7 +461,7 @@ const translations = {
     'cta.button': 'Išbandykite Driver Log Tracker dabar',
 
     // Footer
-    'footer.tagline': 'Sukurta vairuotojams profesionalų',
+    'footer.tagline': 'Sukurta vairuotojams vairuotojo',
     'footer.product.heading': 'Produktas',
     'footer.product.howItWorks': 'Kaip tai veikia',
     'footer.product.launchApp': 'Paleisti programą',
@@ -581,7 +581,7 @@ const translations = {
     'cta.button': 'Essayez Driver Log Tracker maintenant',
 
     // Footer
-    'footer.tagline': 'Développé pour les conducteurs par des professionnels',
+    'footer.tagline': 'Développé pour les conducteurs par un conducteur',
     'footer.product.heading': 'Produit',
     'footer.product.howItWorks': 'Comment ça marche',
     'footer.product.launchApp': "Lancer l'application",
@@ -698,7 +698,7 @@ const translations = {
     'cta.button': 'Probeer Driver Log Tracker nu',
 
     // Footer
-    'footer.tagline': 'Ontwikkeld voor chauffeurs door professionals',
+    'footer.tagline': 'Ontwikkeld voor chauffeurs door een chauffeur',
     'footer.product.heading': 'Product',
     'footer.product.howItWorks': 'Hoe het werkt',
     'footer.product.launchApp': 'Start app',
@@ -817,7 +817,7 @@ const translations = {
     'cta.button': 'Vyzkoušejte Driver Log Tracker nyní',
 
     // Footer
-    'footer.tagline': 'Vyvinutý pro řidiče profesionály',
+    'footer.tagline': 'Vyvinutý pro řidiče řidičem',
     'footer.product.heading': 'Produkt',
     'footer.product.howItWorks': 'Jak to funguje',
     'footer.product.launchApp': 'Spustit aplikaci',
