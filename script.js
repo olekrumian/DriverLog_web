@@ -1,6 +1,4 @@
 // Language Switcher Functionality
-let currentLang = localStorage.getItem('dltracker-lang') || 'en';
-
 // Language names map
 const langNames = {
   en: 'EN',
@@ -11,6 +9,32 @@ const langNames = {
   nl: 'NL',
   cs: 'CS',
 };
+
+// Supported languages
+const supportedLanguages = Object.keys(langNames);
+
+// Detect browser language
+function getBrowserLanguage() {
+  // Get browser language (e.g., 'en-US', 'uk-UA', 'pl-PL')
+  const browserLang = navigator.language || navigator.userLanguage;
+
+  // Extract language code (e.g., 'en' from 'en-US')
+  const langCode = browserLang.split('-')[0].toLowerCase();
+
+  // Check if the language is supported
+  return supportedLanguages.includes(langCode) ? langCode : 'en';
+}
+
+// Get default language (localStorage > browser language > English)
+function getDefaultLanguage() {
+  const savedLang = localStorage.getItem('dltracker-lang');
+  if (savedLang && supportedLanguages.includes(savedLang)) {
+    return savedLang;
+  }
+  return getBrowserLanguage();
+}
+
+let currentLang = getDefaultLanguage();
 
 // Function to translate the page
 function translatePage(lang) {
