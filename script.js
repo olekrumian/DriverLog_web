@@ -166,6 +166,18 @@ document.addEventListener('DOMContentLoaded', () => {
     el.style.animationDelay = `${index * 0.1}s`;
     observer.observe(el);
   });
+
+  // Handle lazy loaded images
+  const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+  lazyImages.forEach((img) => {
+    img.addEventListener('load', () => {
+      img.classList.add('loaded');
+    });
+    // If image is already loaded (cached)
+    if (img.complete) {
+      img.classList.add('loaded');
+    }
+  });
 });
 
 // Add active state to navbar on scroll

@@ -57,6 +57,17 @@ img {
   display: block;
 }
 
+/* Lazy loading optimization */
+img[loading="lazy"] {
+  background: linear-gradient(135deg, rgba(0, 188, 212, 0.05) 0%, rgba(0, 188, 212, 0.02) 100%);
+  min-height: 200px;
+}
+
+img[loading="lazy"].loaded {
+  background: none;
+  min-height: auto;
+}
+
 a {
   text-decoration: none;
   color: inherit;
