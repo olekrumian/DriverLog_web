@@ -30,12 +30,52 @@
             />
             <span>Driver Log Tracker</span>
           </div>
-          <a
-            href="https://dltracker.netlify.app/"
-            class="btn-secondary"
-            target="_blank"
-            >Launch App</a
-          >
+          <div class="nav-actions">
+            <div class="language-switcher">
+              <button class="lang-dropdown-btn" id="langDropdownBtn">
+                <span class="lang-current">EN</span>
+                <svg
+                  class="lang-arrow"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M2 4L6 8L10 4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="lang-dropdown-menu" id="langDropdownMenu">
+                <button class="lang-option" data-lang="en">English (EN)</button>
+                <button class="lang-option" data-lang="uk">
+                  Українська (UA)
+                </button>
+                <button class="lang-option" data-lang="pl">Polski (PL)</button>
+                <button class="lang-option" data-lang="lt">
+                  Lietuvių (LT)
+                </button>
+                <button class="lang-option" data-lang="fr">
+                  Français (FR)
+                </button>
+                <button class="lang-option" data-lang="nl">
+                  Nederlands (NL)
+                </button>
+                <button class="lang-option" data-lang="cs">Čeština (CS)</button>
+              </div>
+            </div>
+            <a
+              href="https://dltracker.netlify.app/"
+              class="btn-secondary"
+              target="_blank"
+              data-i18n="nav.launchApp"
+              >Launch App</a
+            >
+          </div>
         </nav>
 
         <div class="hero-main">
@@ -44,7 +84,7 @@
               Driver Log Tracker — Your Smart Assistant for
               <span class="highlight">Regulation 561</span> Compliance
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
               Forget manual calculations. Monitor driving time, breaks, and rest
               in real-time directly in your browser.
             </p>
@@ -73,9 +113,14 @@
                     stroke-linecap="round"
                   />
                 </svg>
-                Start Calculating
+                <span data-i18n="hero.cta.start">Start Calculating</span>
               </a>
-              <a href="#how-it-works" class="btn-secondary">Learn More</a>
+              <a
+                href="#how-it-works"
+                class="btn-secondary"
+                data-i18n="hero.cta.learn"
+                >Learn More</a
+              >
             </div>
           </div>
 
@@ -135,8 +180,8 @@
                 <circle cx="32" cy="44" r="2" fill="var(--danger-color)" />
               </svg>
             </div>
-            <h3>The Problem</h3>
-            <p>
+            <h3 data-i18n="problem.title">The Problem</h3>
+            <p data-i18n="problem.text">
               Tachograph mistakes cost dearly. EU fines for violations of
               driving time regulations can reach thousands of euros.
             </p>
@@ -181,8 +226,8 @@
                 />
               </svg>
             </div>
-            <h3>The Solution</h3>
-            <p>
+            <h3 data-i18n="solution.title">The Solution</h3>
+            <p data-i18n="solution.text">
               Driver Log Tracker is designed so you know exactly when to stop
               and never violate the law.
             </p>
@@ -195,41 +240,13 @@
     <section class="features">
       <div class="container">
         <div class="section-header">
-          <h2>Key Features</h2>
-          <p>Everything you need to stay compliant and drive with confidence</p>
+          <h2 data-i18n="features.heading">Key Features</h2>
+          <p data-i18n="features.subheading">
+            Everything you need to stay compliant and drive with confidence
+          </p>
         </div>
 
         <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <rect
-                  x="8"
-                  y="12"
-                  width="32"
-                  height="28"
-                  rx="2"
-                  stroke="var(--primary-color)"
-                  stroke-width="2"
-                />
-                <path
-                  d="M16 8V16M32 8V16M8 24H40"
-                  stroke="var(--primary-color)"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <circle cx="18" cy="30" r="1.5" fill="var(--primary-color)" />
-                <circle cx="24" cy="30" r="1.5" fill="var(--primary-color)" />
-                <circle cx="30" cy="30" r="1.5" fill="var(--primary-color)" />
-              </svg>
-            </div>
-            <h3>Regulation 561 Compliant</h3>
-            <p>
-              Algorithms that account for the latest "Mobility Package" updates,
-              ensuring full EU compliance.
-            </p>
-          </div>
-
           <div class="feature-card">
             <div class="feature-icon">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -250,8 +267,8 @@
                 />
               </svg>
             </div>
-            <h3>Simple Interface</h3>
-            <p>
+            <h3 data-i18n="features.interface.title">Simple Interface</h3>
+            <p data-i18n="features.interface.text">
               Minimum clicks — maximum information. Optimized for mobile
               devices, perfect for the cabin.
             </p>
@@ -275,8 +292,10 @@
                 />
               </svg>
             </div>
-            <h3>Multilingual Support</h3>
-            <p>
+            <h3 data-i18n="features.multilingual.title">
+              Multilingual Support
+            </h3>
+            <p data-i18n="features.multilingual.text">
               Supports local formats including Dutch (Jan, Feb, Ma, Di...) for
               seamless international use.
             </p>
@@ -293,8 +312,8 @@
                 />
               </svg>
             </div>
-            <h3>Always Accessible</h3>
-            <p>
+            <h3 data-i18n="features.accessible.title">Always Accessible</h3>
+            <p data-i18n="features.accessible.text">
               Web-based application works fast and is always available via link
               — no app store required.
             </p>
@@ -307,16 +326,18 @@
     <section class="how-it-works" id="how-it-works">
       <div class="container">
         <div class="section-header">
-          <h2>How It Works</h2>
-          <p>Three simple steps to stay compliant</p>
+          <h2 data-i18n="howItWorks.heading">How It Works</h2>
+          <p data-i18n="howItWorks.subheading">
+            Three simple steps to stay compliant
+          </p>
         </div>
 
         <div class="steps">
           <div class="step">
             <div class="step-number">1</div>
             <div class="step-content">
-              <h3>Enter Your Data</h3>
-              <p>
+              <h3 data-i18n="howItWorks.step1.title">Enter Your Data</h3>
+              <p data-i18n="howItWorks.step1.text">
                 Input your shift start time or latest tachograph records. Quick
                 and easy data entry designed for drivers.
               </p>
@@ -332,8 +353,10 @@
           <div class="step">
             <div class="step-number">2</div>
             <div class="step-content">
-              <h3>Get Instant Calculations</h3>
-              <p>
+              <h3 data-i18n="howItWorks.step2.title">
+                Get Instant Calculations
+              </h3>
+              <p data-i18n="howItWorks.step2.text">
                 The system instantly shows remaining time until your next break.
                 Real-time tracking keeps you informed.
               </p>
@@ -349,8 +372,8 @@
           <div class="step">
             <div class="step-number">3</div>
             <div class="step-content">
-              <h3>Plan Your Route</h3>
-              <p>
+              <h3 data-i18n="howItWorks.step3.title">Plan Your Route</h3>
+              <p data-i18n="howItWorks.step3.text">
                 Know in advance where and when you'll need a 45-minute break or
                 daily rest. Drive confidently.
               </p>
@@ -370,8 +393,10 @@
     <section class="advantages">
       <div class="container">
         <div class="section-header">
-          <h2>Why Driver Log Tracker?</h2>
-          <p>Technical excellence for professional drivers</p>
+          <h2 data-i18n="advantages.heading">Why Driver Log Tracker?</h2>
+          <p data-i18n="advantages.subheading">
+            Technical excellence for professional drivers
+          </p>
         </div>
 
         <div class="advantages-grid">
@@ -395,8 +420,8 @@
                 />
               </svg>
             </div>
-            <h3>Lightning Fast</h3>
-            <p>
+            <h3 data-i18n="advantages.fast.title">Lightning Fast</h3>
+            <p data-i18n="advantages.fast.text">
               Hosted on Netlify, the app loads instantly. No waiting, no delays
               — just instant access when you need it.
             </p>
@@ -435,8 +460,8 @@
                 />
               </svg>
             </div>
-            <h3>Secure & Private</h3>
-            <p>
+            <h3 data-i18n="advantages.secure.title">Secure & Private</h3>
+            <p data-i18n="advantages.secure.text">
               Your trip data stays on your device. No cloud storage, no data
               sharing — complete privacy guaranteed.
             </p>
@@ -487,8 +512,8 @@
                 />
               </svg>
             </div>
-            <h3>Universal Access</h3>
-            <p>
+            <h3 data-i18n="advantages.universal.title">Universal Access</h3>
+            <p data-i18n="advantages.universal.text">
               Works on any smartphone, tablet, or laptop. One link, any device —
               it's that simple.
             </p>
@@ -514,8 +539,8 @@
                 />
               </svg>
             </div>
-            <h3>Dark Mode</h3>
-            <p>
+            <h3 data-i18n="advantages.darkMode.title">Dark Mode</h3>
+            <p data-i18n="advantages.darkMode.text">
               Eye-friendly dark theme perfect for night shifts. Reduce eye
               strain during long drives.
             </p>
@@ -537,15 +562,15 @@
               src="images/app-screenshot-5.jpg"
               alt="Main screen with timer"
             />
-            <p>Timer and rest tracking</p>
+            <p data-i18n="showcase.item1">Timer and rest tracking</p>
           </div>
           <div class="showcase-item">
             <img src="images/app-screenshot-1.jpg" alt="Shift details" />
-            <p>Detailed shift events</p>
+            <p data-i18n="showcase.item2">Detailed shift events</p>
           </div>
           <div class="showcase-item">
             <img src="images/app-screenshot-4.jpg" alt="Statistics" />
-            <p>Comprehensive statistics</p>
+            <p data-i18n="showcase.item3">Comprehensive statistics</p>
           </div>
         </div>
       </div>
@@ -555,8 +580,8 @@
     <section class="cta-section">
       <div class="container">
         <div class="cta-content">
-          <h2>Ready to Drive Smarter?</h2>
-          <p>
+          <h2 data-i18n="cta.heading">Ready to Drive Smarter?</h2>
+          <p data-i18n="cta.subheading">
             Join professional drivers who trust Driver Log Tracker for
             compliance
           </p>
@@ -565,7 +590,7 @@
             class="btn-primary large"
             target="_blank"
           >
-            Try Driver Log Tracker Now
+            <span data-i18n="cta.button">Try Driver Log Tracker Now</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path
                 d="M7 3L14 10L7 17"
@@ -594,15 +619,24 @@
               />
               <span>Driver Log Tracker</span>
             </div>
-            <p class="footer-tagline">Developed for drivers by driver</p>
+            <p class="footer-tagline" data-i18n="footer.tagline">
+              Developed for drivers by driver
+            </p>
           </div>
 
           <div class="footer-section">
-            <h4>Product</h4>
+            <h4 data-i18n="footer.product.heading">Product</h4>
             <ul>
-              <li><a href="#how-it-works">How It Works</a></li>
               <li>
-                <a href="https://dltracker.netlify.app/" target="_blank"
+                <a href="#how-it-works" data-i18n="footer.product.howItWorks"
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://dltracker.netlify.app/"
+                  target="_blank"
+                  data-i18n="footer.product.launchApp"
                   >Launch App</a
                 >
               </li>
@@ -610,7 +644,7 @@
           </div>
 
           <div class="footer-section">
-            <h4>Contact</h4>
+            <h4 data-i18n="footer.contact.heading">Contact</h4>
             <ul>
               <li>
                 <a href="mailto:olekrumian@gmail.com">olekrumian@gmail.com</a>
@@ -625,7 +659,7 @@
         </div>
 
         <div class="footer-bottom">
-          <p>
+          <p data-i18n="footer.copyright">
             &copy; 2026 Driver Log Tracker. Built with care for professional
             drivers.
           </p>
@@ -633,6 +667,7 @@
       </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

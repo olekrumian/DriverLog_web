@@ -1,3 +1,101 @@
+// Language Switcher Functionality
+let currentLang = localStorage.getItem('dltracker-lang') || 'en';
+
+// Language names map
+const langNames = {
+  en: 'EN',
+  uk: 'UA',
+  pl: 'PL',
+  lt: 'LT',
+  fr: 'FR',
+  nl: 'NL',
+  cs: 'CS',
+};
+
+// Function to translate the page
+function translatePage(lang) {
+  currentLang = lang;
+  localStorage.setItem('dltracker-lang', lang);
+
+  // Update all elements with data-i18n attribute
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const key = element.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+      element.textContent = translations[lang][key];
+    }
+  });
+
+  // Update special elements that need custom handling
+  updateHeroTitle(lang);
+
+  // Update dropdown display
+  updateLanguageDropdown(lang);
+}
+
+// Update hero title with highlight
+function updateHeroTitle(lang) {
+  const heroTitle = document.querySelector('.hero-title');
+  if (heroTitle && translations[lang]) {
+    const part1 = translations[lang]['hero.title.part1'] || '';
+    const highlight =
+      translations[lang]['hero.title.highlight'] || 'Regulation 561';
+    const part2 = translations[lang]['hero.title.part2'] || '';
+
+    heroTitle.innerHTML =
+      `${part1} <span class="highlight">${highlight}</span> ${part2}`.trim();
+  }
+}
+
+// Update language dropdown display
+function updateLanguageDropdown(lang) {
+  const currentLangEl = document.querySelector('.lang-current');
+  if (currentLangEl) {
+    currentLangEl.textContent = langNames[lang] || lang.toUpperCase();
+  }
+
+  // Update active option
+  document.querySelectorAll('.lang-option').forEach((option) => {
+    option.classList.toggle('active', option.dataset.lang === lang);
+  });
+}
+
+// Initialize language on page load
+document.addEventListener('DOMContentLoaded', () => {
+  // Apply saved language or default
+  translatePage(currentLang);
+
+  // Dropdown functionality
+  const dropdownBtn = document.getElementById('langDropdownBtn');
+  const dropdownMenu = document.getElementById('langDropdownMenu');
+
+  if (dropdownBtn && dropdownMenu) {
+    // Toggle dropdown
+    dropdownBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdownBtn.classList.toggle('active');
+      dropdownMenu.classList.toggle('show');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownBtn.classList.remove('active');
+        dropdownMenu.classList.remove('show');
+      }
+    });
+
+    // Language option selection
+    document.querySelectorAll('.lang-option').forEach((option) => {
+      option.addEventListener('click', () => {
+        const lang = option.dataset.lang;
+        translatePage(lang);
+        dropdownBtn.classList.remove('active');
+        dropdownMenu.classList.remove('show');
+      });
+    });
+  }
+});
+
 // Smooth scroll behavior for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
