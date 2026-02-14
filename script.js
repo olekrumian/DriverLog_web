@@ -94,6 +94,33 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // Install tabs functionality
+  const installTabs = document.querySelectorAll('.install-tab');
+  const installInstructions = document.querySelectorAll(
+    '.install-instructions',
+  );
+
+  installTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const targetTab = tab.dataset.tab;
+
+      // Remove active class from all tabs and instructions
+      installTabs.forEach((t) => t.classList.remove('active'));
+      installInstructions.forEach((inst) => inst.classList.remove('active'));
+
+      // Add active class to clicked tab
+      tab.classList.add('active');
+
+      // Show corresponding instructions
+      const targetInstruction = document.querySelector(
+        `.install-instructions[data-content="${targetTab}"]`,
+      );
+      if (targetInstruction) {
+        targetInstruction.classList.add('active');
+      }
+    });
+  });
 });
 
 // Smooth scroll behavior for anchor links

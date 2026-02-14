@@ -759,6 +759,139 @@ section {
 }
 
 /* ========================
+   Install PWA Section
+   ======================== */
+
+.install-section {
+  background: var(--bg-secondary);
+  padding: 6rem 0;
+}
+
+.install-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0 2rem;
+  flex-wrap: wrap;
+}
+
+.install-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: var(--bg-card);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: inherit;
+}
+
+.install-tab svg {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: var(--transition);
+}
+
+.install-tab:hover {
+  border-color: var(--primary-color);
+  color: var(--text-primary);
+  background: rgba(0, 188, 212, 0.05);
+}
+
+.install-tab:hover svg {
+  opacity: 1;
+}
+
+.install-tab.active {
+  border-color: var(--primary-color);
+  background: rgba(0, 188, 212, 0.1);
+  color: var(--primary-color);
+}
+
+.install-tab.active svg {
+  opacity: 1;
+  color: var(--primary-color);
+}
+
+.install-content {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.install-instructions {
+  display: none;
+}
+
+.install-instructions.active {
+  display: block;
+  animation: fadeInUp 0.4s ease;
+}
+
+.install-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.install-step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.step-number-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  box-shadow: 0 4px 20px rgba(0, 188, 212, 0.3);
+}
+
+.install-step-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.install-step-content p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.install-image {
+  background: var(--bg-card);
+  border-radius: var(--border-radius-lg);
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.install-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-md);
+  display: block;
+}
+
+/* ========================
    CTA Section
    ======================== */
 
@@ -980,6 +1113,24 @@ section {
     text-align: center;
     gap: 2rem;
   }
+
+  /* Install section mobile */
+  .install-step {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .step-number-circle {
+    margin: 0 auto;
+  }
+
+  .install-step-content {
+    text-align: center;
+  }
+
+  .install-image {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1028,6 +1179,35 @@ section {
 
   h2 {
     font-size: 1.75rem;
+  }
+
+  /* Install section small screens */
+  .install-tabs {
+    gap: 0.5rem;
+  }
+
+  .install-tab {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .install-tab svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .install-steps {
+    gap: 2rem;
+  }
+
+  .step-number-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+
+  .install-step-content h3 {
+    font-size: 1.25rem;
   }
 
   /* Disable all hover effects on mobile */

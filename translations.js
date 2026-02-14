@@ -74,6 +74,31 @@ const translations = {
     'showcase.item2': 'Detailed shift events',
     'showcase.item3': 'Comprehensive statistics',
 
+    // Install PWA
+    'install.heading': 'Install on Your Phone',
+    'install.subheading':
+      'Add Driver Log Tracker to your home screen for quick access',
+    'install.ios.step1.title': 'Open in Safari',
+    'install.ios.step1.text': 'Open dltracker.netlify.app in Safari browser',
+    'install.ios.step2.title': 'Tap Share Button',
+    'install.ios.step2.text':
+      'Tap the Share button at the bottom of the screen',
+    'install.ios.step3.title': 'Add to Home Screen',
+    'install.ios.step3.text': 'Scroll down and tap "Add to Home Screen"',
+    'install.ios.step4.title': 'Confirm Installation',
+    'install.ios.step4.text': 'Done!',
+    'install.android.step1.title': 'Open in Chrome',
+    'install.android.step1.text':
+      'Open dltracker.netlify.app in Chrome browser',
+    'install.android.step2.title': 'Tap Menu',
+    'install.android.step2.text':
+      'Tap the three dots menu in the top right corner',
+    'install.android.step3.title': 'Install App',
+    'install.android.step3.text': 'Tap "Install app" or "Add to Home screen"',
+    'install.android.step4.title': 'Confirm Installation',
+    'install.android.step4.text':
+      'Tap "Install" to confirm. The app will appear on your home screen!',
+
     // CTA Section
     'cta.heading': 'Ready to Drive Smarter?',
     'cta.subheading':
@@ -164,6 +189,33 @@ const translations = {
     'showcase.item1': 'Таймер та відстеження відпочинку',
     'showcase.item2': 'Детальні події зміни',
     'showcase.item3': 'Повна статистика',
+
+    // Install PWA
+    'install.heading': 'Встановіть на телефон',
+    'install.subheading':
+      'Додайте Driver Log Tracker на головний екран для швидкого доступу',
+    'install.ios.step1.title': 'Відкрийте в Safari',
+    'install.ios.step1.text':
+      'Відкрийте dltracker.netlify.app у браузері Safari',
+    'install.ios.step2.title': 'Натисніть кнопку Поділитися',
+    'install.ios.step2.text': 'Натисніть кнопку Поділитися внизу екрану',
+    'install.ios.step3.title': 'Додати на головний екран',
+    'install.ios.step3.text':
+      'Прокрутіть вниз і натисніть "Додати на головний екран"',
+    'install.ios.step4.title': 'Підтвердіть встановлення',
+    'install.ios.step4.text': 'Готово!',
+    'install.android.step1.title': 'Відкрийте в Chrome',
+    'install.android.step1.text':
+      'Відкрийте dltracker.netlify.app у браузері Chrome',
+    'install.android.step2.title': 'Натисніть меню',
+    'install.android.step2.text':
+      'Натисніть меню з трьома крапками у правому верхньому куті',
+    'install.android.step3.title': 'Встановити додаток',
+    'install.android.step3.text':
+      'Натисніть "Встановити додаток" або "Додати на головний екран"',
+    'install.android.step4.title': 'Підтвердіть встановлення',
+    'install.android.step4.text':
+      'Натисніть "Встановити" для підтвердження. Додаток з\'явиться на головному екрані!',
 
     // CTA Section
     'cta.heading': 'Готові водити розумніше?',
@@ -257,6 +309,33 @@ const translations = {
     'showcase.item2': 'Szczegółowe wydarzenia zmiany',
     'showcase.item3': 'Kompleksowe statystyki',
 
+    // Install PWA
+    'install.heading': 'Zainstaluj na telefonie',
+    'install.subheading':
+      'Dodaj Driver Log Tracker na ekran główny dla szybkiego dostępu',
+    'install.ios.step1.title': 'Otwórz w Safari',
+    'install.ios.step1.text':
+      'Otwórz dltracker.netlify.app w przeglądarce Safari',
+    'install.ios.step2.title': 'Stuknij przycisk Udostępnij',
+    'install.ios.step2.text': 'Stuknij przycisk Udostępnij u dołu ekranu',
+    'install.ios.step3.title': 'Dodaj do ekranu głównego',
+    'install.ios.step3.text':
+      'Przewiń w dół i stuknij „Dodaj do ekranu głównego"',
+    'install.ios.step4.title': 'Potwierdź instalację',
+    'install.ios.step4.text': 'Gotowe!',
+    'install.android.step1.title': 'Otwórz w Chrome',
+    'install.android.step1.text':
+      'Otwórz dltracker.netlify.app w przeglądarce Chrome',
+    'install.android.step2.title': 'Dotknij Menu',
+    'install.android.step2.text':
+      'Dotknij menu trzech kropek w prawym górnym rogu',
+    'install.android.step3.title': 'Zainstaluj aplikację',
+    'install.android.step3.text':
+      'Dotknij „Zainstaluj aplikację" lub „Dodaj do ekranu głównego"',
+    'install.android.step4.title': 'Potwierdź instalację',
+    'install.android.step4.text':
+      'Dotknij „Zainstaluj" aby potwierdzić. Aplikacja pojawi się na ekranie głównym!',
+
     // CTA Section
     'cta.heading': 'Gotowy, aby jeździć mądrzej?',
     'cta.subheading':
@@ -347,6 +426,33 @@ const translations = {
     'showcase.item1': 'Laikmatis ir poilsio stebėjimas',
     'showcase.item2': 'Išsamūs pamainos įvykiai',
     'showcase.item3': 'Išsami statistika',
+
+    // Install PWA
+    'install.heading': 'Įdiekite telefone',
+    'install.subheading':
+      'Pridėkite Driver Log Tracker į pagrindinį ekraną greitam priėjimui',
+    'install.ios.step1.title': 'Atidarykite Safari',
+    'install.ios.step1.text':
+      'Atidarykite dltracker.netlify.app Safari naršyklėje',
+    'install.ios.step2.title': 'Bakstelėkite Bendrinti mygtuką',
+    'install.ios.step2.text': 'Bakstelėkite Bendrinti mygtuką ekrano apačioje',
+    'install.ios.step3.title': 'Pridėti į pagrindinį ekraną',
+    'install.ios.step3.text':
+      'Slinkite žemyn ir bakstelėkite „Pridėti į pagrindinį ekraną"',
+    'install.ios.step4.title': 'Patvirtinkite įdiegimą',
+    'install.ios.step4.text': 'Atlikta!',
+    'install.android.step1.title': 'Atidarykite Chrome',
+    'install.android.step1.text':
+      'Atidarykite dltracker.netlify.app Chrome naršyklėje',
+    'install.android.step2.title': 'Bakstelėkite Meniu',
+    'install.android.step2.text':
+      'Bakstelėkite trijų taškų meniu viršutiniame dešiniajame kampe',
+    'install.android.step3.title': 'Įdiekite programą',
+    'install.android.step3.text':
+      'Bakstelėkite „Įdiegti programą" arba „Pridėti į pagrindinį ekraną"',
+    'install.android.step4.title': 'Patvirtinkite įdiegimą',
+    'install.android.step4.text':
+      'Bakstelėkite „Įdiegti" patvirtinti. Programa pasirodys pagrindiniame ekrane!',
 
     // CTA Section
     'cta.heading': 'Pasirengę vairuoti protingiau?',
@@ -440,6 +546,34 @@ const translations = {
     'showcase.item2': 'Événements de service détaillés',
     'showcase.item3': 'Statistiques complètes',
 
+    // Install PWA
+    'install.heading': 'Installer sur votre téléphone',
+    'install.subheading':
+      "Ajoutez Driver Log Tracker à votre écran d'accueil pour un accès rapide",
+    'install.ios.step1.title': 'Ouvrir dans Safari',
+    'install.ios.step1.text':
+      'Ouvrez dltracker.netlify.app dans le navigateur Safari',
+    'install.ios.step2.title': 'Appuyez sur Partager',
+    'install.ios.step2.text':
+      "Appuyez sur le bouton Partager en bas de l'écran",
+    'install.ios.step3.title': "Ajouter à l'écran d'accueil",
+    'install.ios.step3.text':
+      'Faites défiler vers le bas et appuyez sur "Ajouter à l\'écran d\'accueil"',
+    'install.ios.step4.title': "Confirmer l'installation",
+    'install.ios.step4.text': 'Terminé!',
+    'install.android.step1.title': 'Ouvrir dans Chrome',
+    'install.android.step1.text':
+      'Ouvrez dltracker.netlify.app dans le navigateur Chrome',
+    'install.android.step2.title': 'Appuyez sur Menu',
+    'install.android.step2.text':
+      'Appuyez sur le menu trois points en haut à droite',
+    'install.android.step3.title': "Installer l'application",
+    'install.android.step3.text':
+      'Appuyez sur "Installer l\'application" ou "Ajouter à l\'écran d\'accueil"',
+    'install.android.step4.title': "Confirmer l'installation",
+    'install.android.step4.text':
+      'Appuyez sur "Installer" pour confirmer. L\'application apparaîtra sur votre écran d\'accueil!',
+
     // CTA Section
     'cta.heading': 'Prêt à conduire plus intelligemment?',
     'cta.subheading':
@@ -531,6 +665,32 @@ const translations = {
     'showcase.item2': 'Gedetailleerde dienstgebeurtenissen',
     'showcase.item3': 'Uitgebreide statistieken',
 
+    // Install PWA
+    'install.heading': 'Installeer op je telefoon',
+    'install.subheading':
+      'Voeg Driver Log Tracker toe aan je startscherm voor snelle toegang',
+    'install.ios.step1.title': 'Open in Safari',
+    'install.ios.step1.text': 'Open dltracker.netlify.app in Safari browser',
+    'install.ios.step2.title': 'Tik op Deel-knop',
+    'install.ios.step2.text': 'Tik op de Deel-knop onderaan het scherm',
+    'install.ios.step3.title': 'Zet op beginscherm',
+    'install.ios.step3.text':
+      'Scroll naar beneden en tik op "Zet op beginscherm"',
+    'install.ios.step4.title': 'Bevestig installatie',
+    'install.ios.step4.text': 'Klaar!',
+    'install.android.step1.title': 'Open in Chrome',
+    'install.android.step1.text':
+      'Open dltracker.netlify.app in Chrome browser',
+    'install.android.step2.title': 'Tik op Menu',
+    'install.android.step2.text':
+      'Tik op het menu met drie puntjes rechtsboven',
+    'install.android.step3.title': 'Installeer app',
+    'install.android.step3.text':
+      'Tik op "App installeren" of "Toevoegen aan startscherm"',
+    'install.android.step4.title': 'Bevestig installatie',
+    'install.android.step4.text':
+      'Tik op "Installeren" om te bevestigen. De app verschijnt op je startscherm!',
+
     // CTA Section
     'cta.heading': 'Klaar om slimmer te rijden?',
     'cta.subheading':
@@ -621,6 +781,34 @@ const translations = {
     'showcase.item1': 'Časovač a sledování odpočinku',
     'showcase.item2': 'Podrobné události směny',
     'showcase.item3': 'Komplexní statistiky',
+
+    // Install PWA
+    'install.heading': 'Instalovat na telefon',
+    'install.subheading':
+      'Přidejte Driver Log Tracker na domovskou obrazovku pro rychlý přístup',
+    'install.ios.step1.title': 'Otevřít v Safari',
+    'install.ios.step1.text':
+      'Otevřete dltracker.netlify.app v prohlížeči Safari',
+    'install.ios.step2.title': 'Klepněte na tlačítko Sdílet',
+    'install.ios.step2.text':
+      'Klepněte na tlačítko Sdílet ve spodní části obrazovky',
+    'install.ios.step3.title': 'Přidat na plochu',
+    'install.ios.step3.text':
+      'Posuňte se dolů a klepněte na „Přidat na plochu"',
+    'install.ios.step4.title': 'Potvrďte instalaci',
+    'install.ios.step4.text': 'Hotovo!',
+    'install.android.step1.title': 'Otevřít v Chrome',
+    'install.android.step1.text':
+      'Otevřete dltracker.netlify.app v prohlížeči Chrome',
+    'install.android.step2.title': 'Klepněte na Menu',
+    'install.android.step2.text':
+      'Klepněte na menu tří teček v pravém horním rohu',
+    'install.android.step3.title': 'Instalovat aplikaci',
+    'install.android.step3.text':
+      'Klepněte na „Instalovat aplikaci" nebo „Přidat na plochu"',
+    'install.android.step4.title': 'Potvrďte instalaci',
+    'install.android.step4.text':
+      'Klepněte na „Instalovat" pro potvrzení. Aplikace se zobrazí na domovské obrazovce!',
 
     // CTA Section
     'cta.heading': 'Připraveni řídit chytřeji?',
